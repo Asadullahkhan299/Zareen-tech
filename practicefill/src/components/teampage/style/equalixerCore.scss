@@ -1,0 +1,43 @@
+.core_section {
+    width: 100%;
+    background-color: #161616;
+    /* min-height: 1200px; */
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+
+.core_section_left {
+    height: 650px;
+}
+
+.core_left h2 {
+    font-size: 45px !important;
+    text-align: center;
+}
+
+.core_left p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.team_core_overlay::before {
+    position: absolute;
+    content: "";
+    transform: rotate(-4deg);
+    width: 130%;
+    height: 106%;
+    background-color: #6d69698f;
+    left: 0px;
+    z-index: 1;
+}
+
+.linear_overlay {
+    position: absolute;
+    background-image: repeating-linear-gradient(rgba(167, 161, 161, 0.52) 5%, rgba(90, 90, 90, 0.418) 8%);
+    content: "";
+    opacity: 0.13;
+    transform: rotate(-4deg);
+    width: 133%;
+    height: 100%;
+    left: 0px;
+    z-index: 1;
+}

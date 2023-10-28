@@ -1,0 +1,77 @@
+@import "./../../../styles/colors.scss";
+
+.s_card {
+  width: 100%;
+  height: 430px;
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.s_card h5 {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+}
+
+.s_card:hover .stack-technology {
+  background-color: var(--white_Sm_Color);
+  width: 100%;
+  height: 100%;
+  /* transition: .5s ease-in-out; */
+  padding-top: 50px;
+  color: white;
+}
+
+.s_card:hover .card_img {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.stack-technology {
+  font-size: 26px;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  height: 159px;
+  transition: 0.5s;
+}
+
+.stack-technology p {
+  font-size: 15px;
+  opacity: 0;
+  transition: 0.2s;
+  /* text-align: justify !important; */
+}
+
+.stack-technology span {
+  position: absolute;
+  bottom: 15px;
+  font-size: 16px;
+}
+
+.stack-technology h6 {
+  color: black;
+  font-weight: bold;
+}
+
+.card_img {
+  position: absolute;
+  width: 100%;
+  height: 63%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  object-fit: cover;
+  top: 0px;
+  transition: 0.5s;
+}
+
+.s_card:hover .stack-technology p,
+.s_card:hover .stack-technology h6 {
+  opacity: 1;
+  transition: 0.2s;
+  color: white;
+}

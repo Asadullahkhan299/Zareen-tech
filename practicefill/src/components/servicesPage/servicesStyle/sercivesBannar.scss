@@ -1,0 +1,15 @@
+.services_bannar {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--theam_Bg_Color);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 767.98px) {
+  .services_bannar {
+    padding-top: 50px;
+  }
+}

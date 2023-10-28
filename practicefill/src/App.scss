@@ -1,0 +1,111 @@
+@import "./styles/colors.scss";
+
+// common scss
+@import "./components/common/navbar.scss";
+@import "./components/common/menu.scss";
+@import "./components/common/footer.scss";
+
+//homepage scss
+@import "./components/homePage/styling/section_1.scss";
+@import "./components/homePage/styling/section_2.scss";
+@import "./components/homePage/styling/section_3.scss";
+@import "./components/homePage/styling/section_4.scss";
+@import "./components/homePage/styling/section_5.scss";
+@import "./components/homePage/styling/section_6.scss";
+@import "./components/homePage/styling/section_7.scss";
+
+//Project page
+@import "./components//ProjectPage/styling/bannar.scss";
+@import "./components//ProjectPage/styling/project.scss";
+
+//services page scss
+@import "./components//servicesPage/servicesStyle/sercivesBannar.scss";
+@import "./components//servicesPage/servicesStyle/servicesCard.scss";
+
+//Team page scss
+@import "./components/teampage/style/equalixerCore.scss";
+@import "./components/teampage/style/style.scss";
+@import "./components/teampage/style/teamcard.scss";
+
+//about page scss
+@import "./components/AboutPage/AboutStyle/AboutBannar.scss";
+@import "./components/AboutPage/AboutStyle/ourWork.scss";
+@import "./components/AboutPage/AboutStyle/Weareequalixer.scss";
+@import "./components/AboutPage/AboutStyle/whatwedo.scss";
+
+:root {
+  --theam_Bg_Color: #272727;
+  --white_Sm_Color: rgb(33, 150, 243);
+  // --theam_Bg_Color: #0c1035;
+  // --white_Sm_Color: #7e05fe;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif !important;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 2.1428;
+  color: #868686;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--theam_Bg_Color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--white_Sm_Color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theam_Bg_Color);
+}
+
+p {
+  color: #868686;
+}
+
+h3,
+h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 2.142rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #fff;
+  margin: 2.6rem 0;
+}
+
+h6 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.285rem;
+  line-height: 1.3333;
+  letter-spacing: 0;
+  color: #fff;
+  margin: 2.6rem 0;
+}
+
+.s_button {
+  font-size: 16px;
+  color: white;
+  border: 1px solid #fff;
+  padding: 14px 20px;
+  border-radius: 50px;
+  transition: all linear 0.3s;
+  background: transparent;
+  cursor: pointer !important;
+}
+
+.s_button:hover {
+  background-color: var(--white_Sm_Color);
+  border-color: var(--white_Sm_Color) !important;
+  transition: 0.3s;
+}

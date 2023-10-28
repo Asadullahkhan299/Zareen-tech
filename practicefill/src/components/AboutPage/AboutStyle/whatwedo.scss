@@ -1,0 +1,48 @@
+.whatwedo {
+    width: 100%;
+    min-height: 100vh;
+    // background-color: lightblue;
+    background-image: radial-gradient(at 67% 36%, hsl(159deg 74% 76% / 45%) 0, transparent 51%), radial-gradient(at 19% 23%, hsla(274deg, 100%, 80%, 0.65) 0, transparent 58%), radial-gradient(at 79% 69%, hsl(0deg 81% 65% / 72%) 0, transparent 51%), radial-gradient(at 66% 48%, hsl(258deg 60% 46% / 59%) 0, transparent 53%), radial-gradient(at 45% 82%, hsl(108deg 100% 41% / 36%) 0, transparent 40%), radial-gradient(at 54% 72%, hsl(235deg 91% 55% / 32%) 0, transparent 49%), radial-gradient(at 3% 24%, hsl(166deg 62% 72%) 0, rgba(41, 203, 121, 0.4) 43%);
+
+}
+
+.left_shadow {
+    box-shadow: 70px 0 79px 0 rgb(0 0 0 / 13%);
+    border-radius: 20px;
+
+}
+
+.right_shadow {
+    box-shadow: -70px 0 79px 0 rgb(0 0 0 / 13%);
+    border-radius: 20px;
+    text-align: start;
+
+}
+
+.main_img {
+    position: relative;
+    width: 100%;
+}
+
+.background_img {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.center_img {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .main_img {
+        display: none;
+    }
+
+}

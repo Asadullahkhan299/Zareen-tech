@@ -1,0 +1,123 @@
+.ourValue {
+    background-image: radial-gradient(at 67% 36%, hsla(159, 86%, 61%, 1) 0, transparent 51%), radial-gradient(at 19% 23%, hsl(274deg 100% 80% / 65%) 0, transparent 58%), radial-gradient(at 79% 69%, hsl(271deg 81% 65%) 0, transparent 51%), radial-gradient(at 66% 48%, hsla(258, 78%, 78%, 1) 0, transparent 53%), radial-gradient(at 45% 82%, hsla(210, 63%, 60%, 1) 0, transparent 40%), radial-gradient(at 54% 72%, hsla(73, 98%, 76%, 1) 0, transparent 49%), radial-gradient(at 3% 24%, hsla(244, 62%, 72%, 1) 0, #29cb7966 43%);
+
+}
+
+.card-box {
+    position: relative;
+    padding: 20px 20px;
+    transition: all 0.3s ease 0s;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #79c906;
+    box-shadow: 0px 6px 19px #00000063;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    transition: .3s;
+    backdrop-filter: blur(15px);
+    // background-image: radial-gradient(at 67% 36%, hsla(159, 86%, 61%, 1) 0, transparent 51%), radial-gradient(at 19% 23%, hsl(274deg 100% 80% / 65%) 0, transparent 58%), radial-gradient(at 79% 69%, hsl(271deg 81% 65%) 0, transparent 51%), radial-gradient(at 66% 48%, hsla(258, 78%, 78%, 1) 0, transparent 53%), radial-gradient(at 45% 82%, hsla(210, 63%, 60%, 1) 0, transparent 40%), radial-gradient(at 54% 72%, hsla(73, 98%, 76%, 1) 0, transparent 49%), radial-gradient(at 3% 24%, hsla(244, 62%, 72%, 1) 0, #29cb7966 43%);
+
+}
+
+.card-box:hover {
+    background: #f03858;
+    transition: .3s;
+    transform: translate(0px, -10px);
+
+}
+
+.card-box>.icon>.image {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 32px;
+    color: white;
+    margin: 0 auto;
+    object-fit: cover;
+    background: #f03858;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+
+
+.card-box:hover .icon .image {
+    background-color: white !important;
+    color: #f03858;
+    transition: .5s;
+    box-shadow: 0px 0px 0px 10px #f6879b, 0px 0px 0px 20px #fd878791;
+}
+
+.card-box .hover_imges {
+    width: 20px;
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.card-box:hover .hover_imges {
+    transition: .5s;
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.card-box:hover .triangle,
+.card-box:hover .cross {
+    left: -56px;
+}
+
+.card-box:hover .square,
+.card-box:hover .blue_circle {
+    right: -56px;
+}
+
+.card-box:hover .orange_circle {
+    bottom: -56px;
+}
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+.card-box .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    color: black;
+    margin-top: 20px;
+}
+
+.card-box .para {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 263px;
+    color: #000;
+    margin-top: 18px;
+}
+
+.triangle {
+    left: 36px;
+    top: 30px;
+}
+
+.square {
+    right: 36px;
+    top: 30px;
+}
+
+.cross {
+    bottom: 36px;
+    left: 30px;
+}
+
+.blue_circle {
+    bottom: 36px;
+    right: 36px;
+}
+
+.orange_circle {
+    bottom: 36px;
+}

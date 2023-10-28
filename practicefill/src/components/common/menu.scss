@@ -1,0 +1,158 @@
+@import "./../../styles/colors.scss";
+
+.fadeleft {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  transform: translateX(0%);
+  transition: 0.3s linear;
+  height: 100%;
+  overflow: auto;
+  background: var(--theam_Bg_Color);
+}
+
+.cross_icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 3;
+  font-size: 30px;
+  color: var(--white_Sm_Color);
+  cursor: pointer;
+}
+
+.main_menu_otter {
+  min-height: 100vh;
+  background: var(--theam_Bg_Color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+  text-decoration: none;
+}
+
+.home_page {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+
+.first_line {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0%;
+  height: 8px;
+  background-color: var(--white_Sm_Color);
+  transition: 0.3s;
+}
+
+.home_page:hover .first_line,
+.project_section:hover .first_line,
+.services_section:hover .first_line {
+  width: 100%;
+  height: 8px;
+  transition: 0.3s;
+}
+
+.second_line {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 8px;
+  height: 0%;
+  background-color: var(--white_Sm_Color);
+  transition: 0.3s;
+}
+
+.home_page:hover .second_line,
+.project_section:hover .second_line,
+.services_section:hover .second_line {
+  width: 8px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.third_line {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 0%;
+  height: 8px;
+  background-color: var(--white_Sm_Color);
+  transition: 0.3s;
+}
+
+.home_page:hover .third_line,
+.project_section:hover .third_line,
+.services_section:hover .third_line {
+  width: 100%;
+  height: 8px;
+  transition: 0.3s;
+}
+
+.forth_line {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 8px;
+  height: 0%;
+  background-color: var(--white_Sm_Color);
+  transition: 0.3s;
+}
+
+.home_page:hover .forth_line,
+.project_section:hover .forth_line,
+.services_section:hover .forth_line {
+  width: 8px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.project_section {
+  height: 280px;
+  width: 100%;
+  background-image: url(./../../assets/images/project.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team_section {
+  background-image: url(./../../assets/images/team.jpg);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #7643e759;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.services_section {
+  margin-top: 100px;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .services_section {
+    margin-top: 0px;
+  }
+}

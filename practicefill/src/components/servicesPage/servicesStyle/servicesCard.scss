@@ -1,0 +1,141 @@
+.blockchain {
+  padding: 50px 0px;
+}
+
+.blockchain_left {
+  transition: 0.5s;
+  height: 492px;
+  width: 415px;
+  max-width: 98%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4f3f0;
+  box-shadow: 11px 3px 23px #00000062;
+  position: relative;
+}
+
+.blockchain_left_inner {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate(10%, 25%);
+  z-index: 2;
+  text-align: right;
+}
+
+.blockchain_left:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #2a3162;
+  top: 0;
+  right: 0;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.blockchain_right {
+  width: 415px;
+  max-width: 98%;
+  height: 492px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  box-shadow: 11px 3px 23px #08080863;
+  position: relative;
+}
+
+.blockchain_right_inner {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate(-10%, 20%);
+  z-index: 2;
+}
+
+.blockchain h3 {
+  font-family: utd-cond, Impact, sans-serif;
+  line-height: 0.9;
+  max-width: 12em;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #60c597;
+}
+
+.blockchain p {
+  font-size: 1rem;
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: calc(var(--paragraph-spacing-bottom, 1) * 1.5em);
+  margin-top: calc(var(--paragraph-spacing-top, 1) * 1.5em);
+  max-width: 42em;
+  color: #dfe3e9;
+}
+
+.blockchain_right:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #766fda;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.fadeRight .blockchain_right_inner {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate(-10%, 30%);
+  z-index: 2;
+}
+
+.fadeRight:after {
+  width: 100%;
+}
+
+.blockchain_left:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #2a3162;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.fadeLeft .blockchain_left_inner {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate(10%, 40%);
+  z-index: 2;
+}
+
+.fadeLeft:after {
+  width: 100%;
+}
+
+.servicesSmallCard {
+  // background-image: url('./../../../../src/assets/images/block-chain.jpeg');
+  border-radius: 20px;
+  background-color: red;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+.servicesSmallCard_inner {
+  backdrop-filter: blur(15px);
+}
+
+.servicesSmallCard_inner p,
+.servicesSmallCard_inner h1 {
+  font-weight: 600;
+  color: black;
+}
